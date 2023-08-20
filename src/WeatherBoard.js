@@ -188,6 +188,7 @@ const Container = styled.div`
 
 .row{
     --bs-gutter-x: 0px !important;
+    /* filter:drop-shadow(10px 10px 100px white); */
 }
  
 .left{
@@ -221,11 +222,18 @@ const Container = styled.div`
 }
 .left .current-time{
     position: absolute;
-    bottom: 80px;
-    left:10px;
+    top: 45%;
+    left:100px;
     color:white;
-    font-size: 40px;
+    font-size: 80px;
+    transition:0.8s ease;
 }
+.left .current-time:hover{
+    position: absolute;
+    
+    filter:drop-shadow(10px 10px 30px white);
+}
+
 
 .left img{
     width:30vw;
