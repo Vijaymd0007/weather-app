@@ -225,7 +225,7 @@ const Container = styled.div`
     top: 45%;
     left:100px;
     color:white;
-    font-size: 80px;
+    font-size: 4rem;
     transition:0.8s ease;
 }
 .left .current-time:hover{
@@ -247,7 +247,16 @@ const Container = styled.div`
    
    
 }
-
+@media (max-width: 1130px) {
+    .left .current-time{
+    position: absolute;
+    top: 45%;
+    left:100px;
+    color:white;
+    font-size: 3rem;
+    transition:0.8s ease;
+}
+}
 
 @media (max-width: 700px) {
     position: absolute;
@@ -257,6 +266,12 @@ const Container = styled.div`
     .left{
     width:50vw;
     height:80vh; 
+}
+
+.left .current-time{
+    
+    font-size: 3rem;
+    transition:0.8s ease;
 }
 .left img{
     width:50vw;
@@ -280,7 +295,9 @@ const Container = styled.div`
 }
 
 
-@media (max-width: 400px) {
+
+
+@media (max-width: 360px) {
     position: absolute;
   top:0px;
   left:0px;
